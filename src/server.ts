@@ -43,7 +43,8 @@ import AuthRoute from './modules/auth/auth.controller';
     app.register(apolloServer.createHandler());
 
     // Starting server
-    const port = 3009;
+    const port = process.env.PORT || 3009;
+    // @ts-ignore
     await app.listen(port);
   } catch (err) {
     app.log.error(err);
