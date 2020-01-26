@@ -45,7 +45,7 @@ import AuthRoute from './modules/auth/auth.controller';
     // Starting server
     const port = process.env.PORT || 3009;
     // @ts-ignore
-    await app.listen(port);
+    await app.listen(port, '0.0.0.0');
   } catch (err) {
     app.log.error(err);
     process.exit(1);
