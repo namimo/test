@@ -11,8 +11,7 @@
     "migration:generate": "npx ts-node ./node_modules/typeorm/cli migration:generate -c development -n",
     "migration:run": "npx ts-node ./node_modules/typeorm/cli migration:run -c development",
     "migration:revert": "npx ts-node ./node_modules/typeorm/cli migration:revert -c development",
-    "build": "tsc",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "build": "tsc"
   },
   "keywords": [
     "rewise",
